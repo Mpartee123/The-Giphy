@@ -4,11 +4,12 @@
 var url = "https://api.giphy.com/v1/gifs/search";
 var apiKey = "VFw1T2oLjjK9zYZYbU9BM10HO1g1xqWE";
 
-var searchTerms = ['car', 'cat', 'dog'];
+var searchTerms = ['cow', 'cat', 'dog','chicken','sheep', 'turkey','duck','horse','pig', 'donkey','rabbit'];
 
 // first thing buttons are populated from pre defined array of search terms
 function init() {
     renderButtons(searchTerms);
+    // localStorage.setItem('searchTerms', searchTerms );
 
 }
 
@@ -65,6 +66,8 @@ function renderGif(staticUrl, animatedUrl, rating) {
 }
 
 function renderButtons(searchTerms) {
+    // $('#buttons').empty();
+    // searchTerms = localStorage.getItem("searchTerms");
     searchTerms.forEach(function (searchTerm) {
         var button = $('<button>');
         button.html(searchTerm);
@@ -76,14 +79,21 @@ function renderButtons(searchTerms) {
         $('#buttons').append(button);
     });
 }
-
 // add a submit listner that posts search input into array to make button.
-
-// next add click event listners to each button that will initiate call back
-
-// loop through callback and make images for each gif object should load static image
-
-// add click listners to each image to toggle gif action. change image source from still to animate.
+$("#submit-button").on("click", function(event) {
+    event.preventDefault();
+    // This line grabs the input from the textbox
+    var newGif = $("#input").val().trim();
+console.log(newGif);
+    // Adding search term from the textbox to searchTerm array
+    searchTerms.push(newGif);
+console.log(searchTerms);
+    $('#buttons').empty();
+    $('#input').val('');
+    // Calling renderButtons which handles the processing of gif searchTerms array
+    localStorage.setItem('searchTerms', searchTerms );
+    renderButtons(searchTerms);
+});
 
 $(document).ready(function () {
     init();
