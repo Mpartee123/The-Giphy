@@ -1,5 +1,79 @@
-body{
+body {
     background-image: url("https://wallpapercave.com/wp/kM1JfvI.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
+    /*display: grid;*/
+    font-family: 'Indie Flower', cursive;
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+    /*grid-template-columns: repeat(10,1fr);*/
+    /*grid-template-rows: 1fr 1fr 1fr 4fr;*/
 
+}
+form{
+    height: 1.5rem;
+}
+h1{
+    background-color: #8b8941;
+}
+h3{
+    background-color: #8b8941;
+}
+input{
+    font-family: 'Indie Flower', cursive;
+    height: 30px;
+    width: 14rem;
+}
+
+button {
+    font-family: 'Indie Flower', cursive;
+    /*height: 1.5rem;*/
+}
+#submit-button{
+    height: 30px;
+    background-color: #fed463;
+    width: 8rem;
+}
+.title {
+    font-size: 2.5rem;
+    padding: 5px 0;
+    /*background-color:#8b8941;*/
+;
+}
+
+.header {
+
+    font-size: 1.75rem;
+    padding: 5px 0;
+    background-color: #8b8941;
+
+}
+
+.search-term{
+    background-color: #7c3e39;
+    color: white;
+    font-size: larger;
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    font-family: 'Indie Flower', cursive;
+}
+
+#gifs {
+margin-top: 18rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 1rem 1rem;
+    justify-items: center;
+}
+
+.rating {
+    position: absolute;
+    font-size: 1rem;
+    color: white;
+    background-color: black;
+    font-weight: bolder;;
 }
