@@ -1,7 +1,10 @@
-body {
+body, html {
     background-image: url("https://wallpapercave.com/wp/kM1JfvI.jpg");
+    /*background-image: url("https://expertideaguide.com/wp-content/uploads/2018/02/10-farm-uses-of-air-compressor.jpg");*/
     background-repeat: no-repeat;
+    background-position: left;
     background-size: cover;
+    height: 100%;
     /*display: grid;*/
     font-family: 'Indie Flower', cursive;
     font-size: 1rem;
@@ -11,16 +14,20 @@ body {
     /*grid-template-rows: 1fr 1fr 1fr 4fr;*/
 
 }
-form{
+
+form {
     height: 1.5rem;
 }
-h1{
+
+h1 {
     background-color: #8b8941;
 }
-h3{
+
+h3 {
     background-color: #8b8941;
 }
-input{
+
+input {
     font-family: 'Indie Flower', cursive;
     height: 30px;
     width: 14rem;
@@ -30,16 +37,21 @@ button {
     font-family: 'Indie Flower', cursive;
     /*height: 1.5rem;*/
 }
-#submit-button{
+
+#submit-button {
     height: 30px;
     background-color: #fed463;
     width: 8rem;
 }
+
 .title {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     padding: 5px 0;
-    /*background-color:#8b8941;*/
-;
+    background-color: #8b8941;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
 }
 
 .header {
@@ -47,13 +59,17 @@ button {
     font-size: 1.75rem;
     padding: 5px 0;
     background-color: #8b8941;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
-.search-term{
+.search-term {
     background-color: #7c3e39;
     color: white;
     font-size: larger;
+    border-radius: 1.5rem;
 }
 
 #buttons {
@@ -63,11 +79,17 @@ button {
 }
 
 #gifs {
-margin-top: 18rem;
+    margin-top: 3rem;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 1rem 1rem;
     justify-items: center;
+
+}
+
+img {
+    border-radius: 9px;
+    border: solid 5px #fed463;
 }
 
 .rating {
@@ -76,4 +98,55 @@ margin-top: 18rem;
     color: white;
     background-color: black;
     font-weight: bolder;;
+}
+
+@media (max-device-width: 1132px) {
+    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+    #gifs {
+        margin-top: 3rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1rem 1rem;
+        justify-items: center;
+    }
+}
+
+@media (max-device-width: 720px) {
+    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+    #buttons {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        font-family: 'Indie Flower', cursive;
+    }
+
+    #gifs {
+        margin-top: 3rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem 1rem;
+        justify-items: center;
+    }
+    body,html{
+        background-size: cover;
+        height: 100%;
+    }
+}
+
+
+@media (max-device-width: 361px) {
+    /* smartphones, iPhone, portrait 480x320 phones */
+    #buttons {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        font-family: 'Indie Flower', cursive;
+    }
+
+    #gifs {
+        margin-top: 3rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem 1rem;
+        justify-items: center;
+    }
+
 }
