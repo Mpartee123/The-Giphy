@@ -1,10 +1,10 @@
-body, html {
+body{
     background-image: url("https://wallpapercave.com/wp/kM1JfvI.jpg");
     /*background-image: url("https://expertideaguide.com/wp-content/uploads/2018/02/10-farm-uses-of-air-compressor.jpg");*/
     background-repeat: no-repeat;
     background-position: left;
     background-size: cover;
-    height: 100%;
+    /*height: 100%;*/
     /*display: grid;*/
     font-family: 'Indie Flower', cursive;
     font-size: 1rem;
@@ -19,13 +19,13 @@ form {
     height: 1.5rem;
 }
 
-h1 {
-    background-color: #8b8941;
-}
+/*h1 {*/
+    /*background-color: #8b8941;*/
+/*}*/
 
-h3 {
-    background-color: #8b8941;
-}
+/*h3 {*/
+    /*background-color: #8b8941;*/
+/*}*/
 
 input {
     font-family: 'Indie Flower', cursive;
@@ -58,7 +58,8 @@ button {
 
     font-size: 1.75rem;
     padding: 5px 0;
-    background-color: #8b8941;
+    border-radius: 10px;
+    background-color: #7c3e39;
     display: table;
     margin-left: auto;
     margin-right: auto;
@@ -108,6 +109,7 @@ img {
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 1rem 1rem;
         justify-items: center;
+        padding-bottom: 37rem;
     }
 }
 
@@ -125,10 +127,11 @@ img {
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 1rem 1rem;
         justify-items: center;
+        padding-bottom: 59rem;
     }
     body,html{
         background-size: cover;
-        height: 100%;
+        /*height: 100%;*/
     }
 }
 
@@ -147,6 +150,12 @@ img {
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 1rem 1rem;
         justify-items: center;
+        padding-bottom: 37rem;
+    }
+    body{
+        background-size: cover;
+        /*height: 100%;*/
+        /*height: 1200px;*/
     }
 
 }
